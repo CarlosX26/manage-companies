@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/inputs.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
+    <link rel="stylesheet" href="../../styles/texts.css">
+    <link rel="stylesheet" href="../../styles/flex.css">
+    <link rel="stylesheet" href="../../styles/margins.css">
+    <link rel="stylesheet" href="../../styles/modal.css">
+    <link rel="stylesheet" href="../../styles/animations.css">
+    <link rel="stylesheet" href="../dashboard/dashboard.css">
+    <link rel="shortcut icon" href="../../assets/img/system_logo.png" type="image/x-icon">
+
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer type="module" src="./dashboard.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <header class="cabecalho flex align-item-center jtf-between">
+        <div class="cabecalho__company flex align-item-center">
+            <img class="company__logo" src="../../assets/img/system_logo.png" alt="logo">
+            <h1 class="company__name font-title-3">Tech Management</h1>
+            <span data-menu="open" class="user__icon user__icon-menu material-symbols-outlined">
+                menu
+            </span>
+        </div>
+        <div data-menu="bodyHamburguer" class="cabecalho__body flex align-item-center flex-dir-col">
+            <nav class="body__menuNav">
+                <button data-section="button" class="button-section">Setores</button>
+                <button data-section="button" class="button-section">Empresas</button>
+                <button data-section="button" class="button-section">Departamentos</button>
+                <button data-section="button" class="button-section">Funcionários</button>
+                <button data-section="button" class="button-section">Sair</button>
+            </nav>
+            
+            <div class="body__user jtf-center flex  align-item-center">
+                <p class="user__name font-text-3">Admin Usuário </p>
+                <span class="user__icon-profile material-symbols-outlined">
+                    account_circle
+                </span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span  id="darkMode" class="slider"></span>
+                </label>
+            </div>
+
+           
+
+        </div>
+    </header>
+
+    <main>
+        <!-- <section>
+            <button class="button-section">Setores</button>
+            <button class="button-section">Empresas</button>
+            <button class="button-section">Departamentos</button>
+        </section> -->
+
+    </main>
+</body>
+</html>

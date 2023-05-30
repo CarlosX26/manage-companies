@@ -1,0 +1,237 @@
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0,0, 0.5);
+    height: 100vh;
+    width: 100%;
+
+}
+
+.modal__register--company{
+    width: 90%;
+    background-color: var(--color-bg-modal);
+    border-radius: var(--radius-2);
+    padding: var(--padding-2);
+    position: relative;
+}
+.modal__register--company > span{
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--color-grey-4);
+    display: inline;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--color-grey-1);
+}
+.modal__register--company > select{
+    border-radius: var(--radius-2);
+    border: 2px solid var(--color-grey-4);
+    width: 50%;
+    height: 48px;
+}
+
+.modal__allcompanies{
+    width: 90%;
+    background: var(--color-grey-6);
+    border-radius: var(--radius-2);
+    padding: var(--padding-2);
+    max-height: 520px;
+    position: relative;
+}
+.div__search{
+    position: relative;
+}
+.div__search > span{
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: var(--color-grey-1);
+    color: var(--color-white);
+    border-radius: var(--radius-2);
+    height: 100%;
+    width: 48px;
+    padding-top: 12px;
+    text-align: center;
+}
+.modal__allcompanies > span{
+    cursor: pointer;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.allcompanies__sectors{
+    height: 72px;
+}
+.sectors__sector{
+    padding: var(--padding-1);
+    cursor: pointer;
+}
+.allcompanies__list{
+    overflow-y: scroll;
+}
+.companies__company{
+    /* border: 1px solid var(--color-grey-3);
+    border-radius: var(--radius-2);
+    min-height: 80px; */
+    /* width: 190px; */
+    min-height: 100px;
+    padding: var(--padding-2);
+    border-radius: 30px;
+    background: var(--color-grey-5);
+    /* box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff; */
+}
+
+.modal__addDepartment{
+    width: 90%;
+    background-color: var(--color-bg-modal);
+    padding: var(--padding-2);
+    border-radius: var(--radius-2);
+    position: relative;
+}
+.modal__addDepartment > span{
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--color-grey-4);
+    display: inline;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--color-grey-1);
+
+}
+.modal__addDepartment > textarea{
+    width: 100%;
+    resize: none;
+    border: 2px solid var(--color-grey-4);
+    height: 60px;
+    border-radius: var(--radius-2);
+    padding: var(--padding-2);
+    background: var(--color-grey-6);
+
+}
+.modal__addDepartment > textarea:focus{
+    border-color: var(--color-brand-1);
+}
+.modal__addDepartment > select{
+    width: 50%;
+    border: 2px solid var(--color-grey-4);
+
+}
+
+.modal__deleteDep{
+    width:90%;
+    background-color: var(--color-bg-modal);
+    padding: var(--padding-2);
+    border-radius: var(--radius-2);
+}
+.modal__editDep{
+    background-color: var(--color-bg-modal);
+    width: 90%;
+    padding: var(--padding-2);
+    border-radius: var(--radius-2);
+    position: relative;
+}
+.modal__editDep > span{
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--color-grey-4);
+    display: inline;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--color-grey-1);
+
+}
+
+.modal__addEmployee{
+    width: 90%;
+    background-color: var(--color-bg-modal);
+    padding: var(--padding-2);
+    border-radius: var(--radius-2);
+    position: relative;
+}
+.modal__addEmployee > span{
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--color-grey-4);
+    display: inline;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--color-grey-1);
+}
+.modal__addEmployee> select{
+    width: 50%;
+    border: 2px solid var(--color-grey-4);
+
+}
+
+.modal__editEmployee{
+    width: 90%;
+    background-color: var(--color-bg-modal);
+    padding: var(--padding-2);
+    border-radius: var(--radius-2);
+    position: relative;
+}
+.modal__editEmployee > span{
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--color-grey-4);
+    display: inline;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--color-grey-1);
+}
+
+.modal__fireEmployee{
+    width: 90%;
+    background-color: var(--color-bg-modal);
+    padding: var(--padding-2);
+    border-radius: var(--radius-2);
+}
+
+.button-fire-modal{
+    height: var(--btn-height-1);
+    background-color: var(--color-grey-4);
+    border-radius: var(--radius-2);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-text-2);
+    cursor: pointer;
+}
+
+
+
+@media (min-width:768px) {
+    .modal__register--company{
+        width: 40%;
+    }
+    .modal__editDep{
+        width: 40%;
+    }
+    .modal__addDepartment{
+        width: 40%;
+    }
+    .modal__addEmployee{
+        width: 40%;
+    }
+    .modal__editEmployee{
+        width: 40%;
+    }
+    .modal__fireEmployee{
+        width: 40%;
+    }
+    .modal__deleteDep{
+        width: 40%;
+    }
+    .modal__allcompanies{
+        width: 40%;
+    }
+}

@@ -1,0 +1,19 @@
+.mg-top-1{
+    margin-top: var(--margin-1);
+}
+
+.mg-top-2{
+    margin-top: var(--margin-2);
+}
+
+.mg-top-3{
+    margin-top: var(--margin-3);
+}
+
+.mg-top-4{
+    margin-top: var(--margin-4);
+}
+
+.mg-bottom-2{
+    margin-bottom: var(--margin-2);
+}

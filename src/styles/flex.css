@@ -1,0 +1,55 @@
+.flex{
+    display: flex;
+}
+
+.jtf-start{
+    justify-content: flex-start;
+}
+
+.jtf-center{
+    justify-content: center;
+}
+
+.jtf-between{
+    justify-content: space-between;
+}
+
+.align-item-center{
+    align-items: center;
+}
+
+.flex-dir-col{
+    flex-direction: column;
+}
+
+.flex-dir-row{
+    flex-direction: row;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.align-self-start{
+    align-self: flex-start;
+}
+
+.align-self-end{
+    align-self: flex-end;
+}
+
+.gap-1{
+    gap: var(--gap-1);
+}
+.gap-2{
+    gap: var(--gap-2);
+}
+.gap-3{
+    gap:var(--gap-3);
+}
+.gap-4{
+    gap:var(--gap-4);
+}
+.gap-5{
+    gap: var(--gap-5);
+}

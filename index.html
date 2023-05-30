@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/inputs.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+    <link rel="stylesheet" href="./src/styles/texts.css">
+    <link rel="stylesheet" href="./src/styles/flex.css">
+    <link rel="stylesheet" href="./src/styles/margins.css">
+    <link rel="stylesheet" href="./src/styles/animations.css">
+    <link rel="stylesheet" href="./src/styles/modal.css">
+    <link rel="stylesheet" href="./src/pages/home/index.css">
+
+    <link rel="shortcut icon" href="./src/assets/img/system_logo.png" type="image/x-icon">
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer type="module" src="./src/scripts/index.js"></script>
+    <title>Home</title>
+</head>
+<body>
+ 
+    <main class="container">
+        <section class="section__infos">
+            <img class="mg-top-1 infos__logo" src="./src/assets/img/system_logo.png" alt="logo">
+            <h2 class="mg-top-1 infos__nameCompany font-title-2">Tech Management</h2>
+            <h1 class="mg-top-1 font-title-1">Login</h1>
+            <p class="mg-top-1 infos__accessibility font-text-1">Digite seu e-mail e senha abaixo</p>
+        </section>
+
+        <section class="section__login mg-bottom-2 ">
+            <form class="flex flex-dir-col align-item-center">
+                <label class=" align-self-start font-text-2 flex align-item-center" for="" ><span class="material-symbols-outlined">person</span>Email</label>
+                <input data-input="email" class="input-default" type="text" placeholder="Digite seu email">
+                <label  class="mg-top-2  align-self-start font-text-2 flex align-item-center" for=""><span class="material-symbols-outlined">key</span>Senha</label>
+                <div data-boxPassword="login" class="box-password ">
+                    <input data-input="password" class="input-default" type="password" placeholder="Digite sua senha">
+                    <span class="eyePassword material-symbols-outlined">
+                        visibility_off
+                    </span>
+                </div>
+                <button data-button="login" class="mg-top-2 button-primary">Login</button>
+                <p class="mg-top-1  font-text-1">Não tem uma conta?</p>
+                <button data-button="register" class="mg-top-1  button-outline-primary">Cadastre-se</button>
+                <!-- <button class="mg-top-1  button-outline-primary">Empresas cadastradas</button> -->
+                <p class="mg-top-1  font-text-1">Lista de empresas cadastradas <a id="linkToListCompanies" href="#">aqui</a></p>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>

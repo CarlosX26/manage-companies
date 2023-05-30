@@ -1,0 +1,90 @@
+@keyframes formRegisterUp{
+    0% {
+        bottom: -618px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+@keyframes formRegisterDown{
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: -618px;
+        }
+}
+@keyframes menuHamburguerDown{
+    0%{
+        top: -80px;
+        z-index: -50;
+        opacity: 0;
+    }
+    100%{
+        top: 95px;
+        z-index: 12;
+        opacity: 1;
+    }
+}
+@keyframes menuHamburguerUp{
+    0%{
+        top: 95px;
+        opacity: 1;
+        z-index: 12;
+    }
+    100%{
+        top: -95px;
+        opacity: 0;
+        z-index: -50;
+    }
+}
+@keyframes rotateEl{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+@keyframes modalCreateComanyIn{
+    0%{
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes modalCreateComanyOut{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+}
+.modalCreateCompanyIn{
+    animation: modalCreateComanyIn 0.7s ease;
+}
+.modalCreateCompanyOut{
+    animation: modalCreateComanyOut 0.7s ease;
+}
+.rotateElement{
+    animation: rotateEl 0.7s ease;
+}
+.menuHamburguerUp{
+    animation: menuHamburguerUp 0.7s ease;
+}
+.menuHamburguerDown{
+    animation: menuHamburguerDown 0.7s ease;
+}
+.formRegisterUp{
+    animation: formRegisterUp 0.7s ease;
+}
+.formRegisterDown{
+    animation: formRegisterDown 0.7s ease;
+}
+
